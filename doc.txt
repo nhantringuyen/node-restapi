@@ -1,0 +1,10 @@
+npm init -y
+npm i express pg sequelize
+cd app
+node index.js
+cd ..
+docker image build -t node_tabnine:0.0.1 .
+docker images
+docker run -p 3001:3001 node_tabnine:0.0.1
+docker ps -a
+docker compose build

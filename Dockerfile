@@ -1,5 +1,5 @@
 FROM node:14
-EXPOSE 3001
+EXPOSE 3000
 WORKDIR  /src
 RUN npm install i npm@latest -g
 COPY package.json package-lock*.json ./

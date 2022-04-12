@@ -5,6 +5,25 @@ node index.js
 cd ..
 docker image build -t node_tabnine:0.0.1 .
 docker images
-docker run -p 3001:3001 node_tabnine:0.0.1
+docker run -p 3000:3000 node_tabnine:0.0.1
 docker ps -a
 docker compose build
+docker compose up
+docker ps -a
+docker rm "container id"
+docker compose up
+docker exec -it 56 psql -U francesco tabnine_db // 56 : container id
+docker compose build
+docker images
+docker compose up
+docker exec -it a3 psql -U francesco tabnine_db // a3 : container id
+\dt
+select * from users;
+exit
+docker network ls
+docker network inspect ca // ca: network id
+docker container ls
+docker image ls
+docker network ls
+docker volume ls
+docker images
